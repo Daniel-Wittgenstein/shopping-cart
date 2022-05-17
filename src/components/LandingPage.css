@@ -90,7 +90,16 @@
   padding: 24px;
   font-family: 'Poppins', sans-serif;
   transition: all .2s ease-in-out;
+  border: 0px;
 }
+
+.landing-page-shop-now-button:focus {
+  outline: #00ABC2 solid 3px;
+}
+
+
+
+
 
 .landing-page-shop-now-button:hover {
   transform: scale(1.1);
