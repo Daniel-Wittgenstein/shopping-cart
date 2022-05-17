@@ -1,0 +1,42 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+
+:root {
+  --main-bg: #FFF;
+  --main-fg: #222;
+  --accent-bg: #00abc2;
+  --accent-fg: #FFF;
+
+  --accent-bg-button-hover: #0ac3db;
+
+  --nav-link-hover: #AAA;
+  --nav-link-focus: #AAA;
+
+  --space-medium: 12px;
+}
+
+
+
+body {
+  background: #F9F9F9 !important;
+}
+
+
+
+/*################*/
+
+
+
+
+.footer {
+  background: var(--accent-bg) !important;
+  color: var(--accent-fg) !important;
+  padding: var(--space-medium);
+}
+
+
+
+

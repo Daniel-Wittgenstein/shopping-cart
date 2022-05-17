@@ -1,0 +1,129 @@
+
+
+.navbar-round-quasi-button {
+  padding: 20px;
+}
+
+.navbar-round-quasi-button:hover {
+  background: var(--accent-bg-button-hover);
+  border-radius: 50%;
+}
+
+.cart-icon-img {
+  filter: invert(100%);
+}
+
+.navbar-quasi-button {
+  padding: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-weight: bold;
+  border: 0px solid white;
+}
+
+.navbar-quasi-button:hover {
+  background: var(--accent-bg-button-hover);
+}
+
+/*
+
+.navbar-quasi-button:hover {
+  background: linear-gradient(270deg,#00abc2, #ffffff);
+  background-size: 400% 400%;
+  animation: AnimationName 0.5s ease;
+  animation-fill-mode: forwards;
+  border-radius: 20px;
+}
+
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  100%{background-position:100% 50%}
+}
+
+*/
+
+
+
+.navbar-custom {
+  background-color: var(--accent-bg);
+  padding: 0px !important;
+  
+}
+
+.nav-link-nav-outer {
+  /* to make links right-aligned in the navbar: */
+  width: 100% !important;
+}
+
+
+.nav-link-nav-wrapper {
+  /* to vertically center links inside navbar: */
+  align-items: center !important;
+}
+
+
+.nav-link {
+  font-size: 18px !important;
+}
+
+
+
+/* Medium devices and lower (tablets, less than 992px)
+this media query / breakpoint is exactly the same as Bootstrap's:
+*/
+@media (max-width: 991.98px) {
+
+  /* additional style rules for
+  stacked links in mobile navigation dropdown: */
+  .nav-link-nav-wrapper {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center; /* align links horizontally. not mandatory, but looks
+    a bit nicer (arguably).*/
+  }
+
+  .nav-link {
+    margin-top: 0px; /* more vertical space between links because users' fingers
+      are big (nah, the distance is already big enough or even too big */
+  }
+
+}
+
+
+
+/* Large devices (desktops, 992px and up)
+this media query / breakpoint is exactly the same as Bootstrap's: */
+@media (min-width: 992px) {
+  /* to make links right-aligned in the navbar:
+  but not on mobile, where links should remain
+  stacked
+  */
+  .nav-link-nav-wrapper {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-end !important;
+  }
+
+  .nav-link {
+    margin-left: 48px; /* horizontal space between navbar links */
+  }
+
+}
+
+
+.nav-brand-text {
+  color: var(--accent-fg) !important;
+}
+
+.nav-link {
+  color: var(--accent-fg) !important;
+}
+
+
+
+.nav-link:focus {
+  color: var(--nav-link-focus) !important;
+}
+
+
+
