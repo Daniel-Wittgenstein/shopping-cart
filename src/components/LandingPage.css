@@ -12,26 +12,6 @@
 
 
 
-/* Medium devices (tablets, less than 992px)
-this media query / breakpoint is exactly the same as Bootstrap's:
-*/
-@media (max-width: 991.98px) {
-
-  .main {
-    padding-top: 0px;
-  }
-
-}
-
-
-/* Large devices (desktops, 992px and up)
-this media query / breakpoint is exactly the same as Bootstrap's: */
-@media (min-width: 992px) {
-  .main {
-    padding-left: 128px;
-    padding-right: 128px;
-  }
-}
 
 
 .landing-page-left-column {
@@ -45,6 +25,8 @@ this media query / breakpoint is exactly the same as Bootstrap's: */
   border-radius: 4px;
   
 }
+
+
 
 
 .landing-page-bottom-col {
@@ -72,18 +54,20 @@ this media query / breakpoint is exactly the same as Bootstrap's: */
 }
 
 
-
-
 .landing-page-box {
-  padding: 20px;
-  padding-top: 32px;
+  padding-top: 32px !important;
+  border: 0px solid red;
+  margin: 30px;
 }
+
+
+
 
 .landing-page-heading {
   font-family: 'Poppins', sans-serif;
-  color: #444;
+  color: #555;
   font-weight: 700;
-  font-size: 48px !important;  
+  font-size: clamp(20px, 4vw, 32px) !important;  
 }
 
 
@@ -102,8 +86,8 @@ this media query / breakpoint is exactly the same as Bootstrap's: */
   border-radius: 32px;
   background-color: black;
   color: #FFF;
-  font-size: 32px;
-  padding: 48px;
+  font-size: 24px;
+  padding: 24px;
   font-family: 'Poppins', sans-serif;
   transition: all .2s ease-in-out;
 }
@@ -123,18 +107,32 @@ this media query / breakpoint is exactly the same as Bootstrap's: */
 
 
 
+
 /* Medium devices (tablets, less than 992px)
 this media query / breakpoint is exactly the same as Bootstrap's:
 */
 @media (max-width: 991.98px) {
+
+  .main {
+    padding-top: 0px;
+  }
+
   .landing-image {
     margin-top: 48px; /*on small screens, image is stacked
     below other elements and needs some vertical spacing */
   }
+
 }
 
 
-
+/* Large devices (desktops, 992px and up)
+this media query / breakpoint is exactly the same as Bootstrap's: */
+@media (min-width: 992px) {
+  .main {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+}
 
 
 

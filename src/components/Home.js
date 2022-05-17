@@ -4,12 +4,19 @@
 
 //import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 
-import Layout from './Layout.js' 
+
+import Header from './Header'
+import Footer from './Footer'
+import LandingPage from './LandingPage'
 
 
 function Home() {
   return (
-    <Layout></Layout>
+    <>
+      <Header></Header>
+      <LandingPage></LandingPage>
+      <Footer></Footer>
+    </>
   )
 }
 
